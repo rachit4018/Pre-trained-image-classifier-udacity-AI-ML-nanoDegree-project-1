@@ -41,7 +41,7 @@ def get_input_args():
     # Create Parse using ArgumentParser
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('--dir',type=str,default='pet_images',help='path to the pet_images')
+    parser.add_argument('--dir',type=str,default='pet_images/',help='path to the pet_images')
     parser.add_argument('--arch',type=str,default='vgg',help='arch arg to cnn model architectuure')
     parser.add_argument('--dogfile',type=str,default='Collie_03797.jpg',help='dogfile arg to text file with arg name')
     
