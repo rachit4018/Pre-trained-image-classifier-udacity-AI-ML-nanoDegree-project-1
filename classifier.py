@@ -1,5 +1,6 @@
 import ast
-from PIL import Image
+#from PIL import Image
+import PIL
 import torchvision.transforms as transforms
 from torch.autograd import Variable
 import torchvision.models as models
@@ -17,7 +18,7 @@ with open('imagenet1000_clsid_to_human.txt') as imagenet_classes_file:
 
 def classifier(img_path, model_name):
     # load the image
-    img_pil = Image.open(img_path)
+    img_pil = PIL.Image.open(img_path)
 
     # define transforms
     preprocess = transforms.Compose([
